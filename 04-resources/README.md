@@ -27,13 +27,8 @@ resource "random_string" "example" {
 }
 ```
 2. Save the file
-3. Run `terraform apply` to create the resource
-
-  3.1. When prompted, type `yes` to confirm the apply action
-
-4. Verify that the random string has been created by checking the output in the terminal
-
-  4.1. You should see `Apply complete! Resources: 1 added, 0 changed, 0 destroyed.`
+3. Run `terraform apply` to create the resource. When prompted, type `yes` to confirm the apply action
+4. Verify that the random string has been created by checking the output in the terminal. You should see `Apply complete! Resources: 1 added, 0 changed, 0 destroyed.`
 
 ## Accessing Resource Attributes
 
