@@ -7,4 +7,3 @@ By the end of this tutorial, you will be able to:
 - Install and configure Terraform
 - Create and manage your first Terraform configuration
 - Understand the core concepts of Terraform, including providers, resources, and state
-- 
