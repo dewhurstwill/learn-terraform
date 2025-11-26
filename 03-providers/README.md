@@ -19,6 +19,19 @@ In this tutorial, we will be using the `random` provider, which is maintained by
 3. In the new folder, create the following file:
   - main.tf
 
+## Version Pinning 
+
+It is a best practice to pin the version of the provider you are using in your Terraform configuration. This ensures that your infrastructure remains stable and predictable, as updates to providers can introduce breaking changes. You can specify the version of a provider in the `required_providers` block within the `terraform` block of your configuration file.
+
+### Understanding Version Constraints
+
+| Operator	| Description |
+|-------------|-------------|
+| = | no operator	Allows only one exact version number. Cannot be combined with other conditions. |
+| !=	| Excludes an exact version number. |
+| >, >=, <, <=	| Compares to a specified version. Terraform allows versions that resolve to true. The > and >= operators request newer versions. The < and <= operators request older versions. |
+| ~>	| Allows only the right-most version component to increment Examples: ~> 1.0.4: Allows Terraform to install 1.0.5 and 1.0.10 but not 1.1.0. ~> 1.1: Allows Terraform to install 1.2 and 1.10 but not 2.0. |
+
 ## Setting up a provider
 
 Setup our terraform configuration and provider
